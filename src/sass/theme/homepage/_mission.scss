@@ -1,0 +1,44 @@
+.mission-vission {
+    position: relative;
+    overflow: hidden;
+    
+    &__content--body {
+        text-align: center;
+        color: #333;
+        padding: 60px 50px;
+        
+        .custom-width {
+            width: 90%;
+            margin: 4rem auto;
+        }
+    }
+    &__mission {
+        position: relative;
+        h1 {
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 40px;
+            margin-bottom: 2rem;
+        }
+        p {
+            font-size: 1.8rem;
+            line-height: 170%;
+
+        }
+    }
+    &__vission {
+        position: relative;
+        h1 {
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 40px;
+            margin-bottom: 2rem;
+        }
+        p {
+            line-height: 170%;
+            font-size: 1.8rem;
+
+        }
+    }
+
+}
