@@ -30,7 +30,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<?php if( is_front_page(  ) ):?>
 		<div id="wrapper-navbar">
 	<?php else: ?>
-		<div id="wrapper-navbar">
+		<div id="wrapper-navbar-page">
 	<?php endif; ?>
 
 		<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
