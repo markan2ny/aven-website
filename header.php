@@ -45,11 +45,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<?php if ( ! has_custom_logo() ): ?>
 						<a href="<?php echo home_url( ); ?>">Aven Fashion</a>
 					<?php 
-						else:
+					else:
 					
 						the_custom_logo();
 						
-						endif;
+					endif;
 				?>
 			</div>
 				<!-- end custom logo -->

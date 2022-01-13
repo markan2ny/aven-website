@@ -5,6 +5,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700&display=swap");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -16136,8 +16137,11 @@ body {
   width: 100%;
 }
 
-section.fullpage {
-  height: 100vh;
+@media (min-width: 992px) {
+  section.fullpage {
+    display: grid;
+    place-items: center;
+  }
 }
 
 #wrapper-navbar {
@@ -16520,7 +16524,7 @@ section.fullpage {
 .news__view--all {
   display: block;
   margin: auto;
-  margin-top: 6rem;
+  margin-top: 3rem;
   text-align: center;
 }
 .news__view--all a {
@@ -16712,6 +16716,66 @@ section.fullpage {
 .mission-vission__vission p {
   line-height: 170%;
   font-size: 1.8rem;
+}
+
+#single-wrapper {
+  position: relative;
+  background: lightgray;
+  padding: 0;
+}
+#single-wrapper #main {
+  margin: 50px 20px;
+  margin-top: 100px;
+  background: #fff;
+}
+#single-wrapper #main img.wp-post-image {
+  width: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+#single-wrapper #main .entry-header {
+  padding: 50px 20px 10px;
+}
+#single-wrapper #main .entry-header h1 {
+  font-size: 3rem;
+}
+#single-wrapper #main .entry-header .entry-meta {
+  font-size: 1.6rem;
+}
+#single-wrapper #main .entry-content {
+  padding: 20px 20px 10px;
+  font-size: 1.8rem;
+  line-height: 2;
+}
+#single-wrapper #main .entry-footer {
+  padding: 20px 20px 40px;
+}
+#single-wrapper #main .entry-footer .edit-link a {
+  -webkit-text-decoration-line: none;
+  text-decoration-line: none;
+  outline: none;
+  padding: 10px 20px;
+  background: crimson;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+#single-wrapper #main .entry-footer .edit-link a:hover {
+  background: #c73551;
+}
+#single-wrapper #main .post-navigation {
+  padding: 20px 30px;
+}
+#single-wrapper #main .post-navigation .nav-previous a {
+  color: #333;
+  font-size: 20px;
+}
+#single-wrapper #main .post-navigation .nav-next a {
+  font-size: 20px;
+  color: #333;
 }
 
 .prod {

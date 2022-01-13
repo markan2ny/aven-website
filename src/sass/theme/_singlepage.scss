@@ -1,0 +1,72 @@
+#single-wrapper {
+    position: relative;
+    background: lightgray;
+    padding: 0;
+
+    #main {
+        margin: 50px 20px;
+        .single-post-article {
+            
+        }
+
+        img.wp-post-image {
+            width: 100%;
+            object-fit: contain;
+        }
+
+        margin-top: 100px;
+        background: #fff;
+        
+        .entry-header {
+            padding: 50px 20px 10px;
+            h1 {
+                font-size: 3rem;
+            }
+            .entry-meta {
+                font-size: 1.6rem;
+            }
+        }
+        .entry-content {
+            padding:  20px 20px 10px;
+            font-size: 1.8rem;
+            line-height: 2;
+        }
+        .entry-footer {
+            padding: 20px 20px 40px;
+            .edit-link {
+                a {
+                    text-decoration-line: none;
+                    outline: none;
+                    padding: 10px 20px;
+                    background: crimson;
+                    color: #fff;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    font-weight: 700;
+                    transition: .3s;
+
+                    &:hover {
+                        background: #c73551;
+                    }
+                }
+            }
+        }
+        .post-navigation {
+            padding: 20px 30px;
+            .nav-previous {
+                a {
+                    color: #333;
+                    font-size: 20px;
+                    text-decoration: none;
+                }
+            }
+            .nav-next {
+                a {
+                    font-size: 20px;
+                    color: #333;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

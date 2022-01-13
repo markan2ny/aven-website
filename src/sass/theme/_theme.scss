@@ -57,5 +57,8 @@ body {
 }
 
 section.fullpage {
-	height: 100vh;
+	@media (min-width: 992px) {
+		display: grid;
+		place-items: center;
+	}
 }

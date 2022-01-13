@@ -32,7 +32,7 @@ if($loop->have_posts()):
             </div>
         </div>
         <div class="news__grid-txt">
-            <span>Announcement</span>
+            <span>News & Announcement</span>
             <h2><?php the_title(); ?></h2>
             <ul>
                 <li><i class="fa fa-calendar"></i> <?php the_time( 'M j, Y' ); ?></li>

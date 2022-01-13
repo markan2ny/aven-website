@@ -14,8 +14,7 @@
 
 // Google font
 // @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
-// @import "theme/fonts";
-
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700&display=swap');
 
 // Header & Footer
 @import "theme/header";
@@ -28,5 +27,6 @@
 @import "theme/homepage/mission";
 
 //Production
+@import "theme/singlepage";
 @import "theme/production/prod_header";
 
