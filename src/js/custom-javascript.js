@@ -10,10 +10,11 @@ window.addEventListener('scroll', function() {
     const toggleBlack = document.querySelector('.navbar-toggler');
     const logo = document.querySelector('.brand-name a img');
 
-    header1.classList.toggle('sticky', window.scrollY > 100);
-    headerTxtColor.classList.toggle('active', window.scrollY > 100);
-    toggleBlack.classList.toggle('active', window.scrollY > 100);
-    logo.classList.toggle('active', window.scrollY > 100);
+    header1.classList.toggle('sticky', window.scrollY >= 100);
+    headerTxtColor.classList.toggle('active', window.scrollY >= 100);
+    toggleBlack.classList.toggle('active', window.scrollY >= 100);
+    logo.classList.toggle('active', window.scrollY >= 100);
+
 	
 });
 

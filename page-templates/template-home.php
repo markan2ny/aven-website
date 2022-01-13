@@ -14,6 +14,8 @@ get_header();
 
 $container = get_theme_mod( 'understrap_container_type' );
 
+ do_shortcode( '[prod_banner title="Production"]' ) ;
+
 get_template_part( 'global-templates/header','hero' );
 get_template_part( 'global-templates/header','about' );
 get_template_part( 'global-templates/header','news' );

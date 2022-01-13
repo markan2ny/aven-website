@@ -5,7 +5,6 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700&display=swap");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -16239,6 +16238,105 @@ section.fullpage {
     max-width: 200px;
   }
   #wrapper-navbar #main-nav .brand-name a img.active {
+    max-width: 120px;
+  }
+}
+
+#wrapper-page {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 100;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+#wrapper-page.dark {
+  background-color: red;
+}
+#wrapper-page .container {
+  max-width: 1800px !important;
+}
+#wrapper-page.sticky {
+  padding: 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+#wrapper-page #main-nav-page {
+  padding: 0 20px;
+}
+#wrapper-page #main-nav-page .brand-name a {
+  color: #333;
+  font-size: 2rem;
+  text-decoration: none;
+  font-weight: 700;
+  -webkit-transition: color 0.1s ease;
+  transition: color 0.1s ease;
+}
+#wrapper-page #main-nav-page .brand-name a:hover {
+  color: #00ccff;
+}
+#wrapper-page #main-nav-page .brand-name a img {
+  max-width: 120px;
+  width: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+#wrapper-page #main-nav-page ul.active li a {
+  color: #333;
+}
+#wrapper-page #main-nav-page ul li {
+  margin-right: 10px;
+}
+#wrapper-page #main-nav-page ul li a {
+  font-size: 1.6rem;
+  color: #333;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+}
+#wrapper-page #main-nav-page ul li a:hover {
+  color: #00ccff;
+}
+#wrapper-page #main-nav-page ul li.current-menu-item a {
+  color: #00ccff;
+}
+#wrapper-page #main-nav-page ul .dropdown-menu {
+  background: transparent;
+  border: none;
+}
+#wrapper-page #main-nav-page .navbar-toggler {
+  position: relative;
+}
+#wrapper-page #main-nav-page .navbar-toggler.active {
+  color: #333;
+}
+#wrapper-page #main-nav-page .navbar-toggler.active .bar {
+  background-color: #333;
+}
+#wrapper-page #main-nav-page .navbar-toggler.active .title {
+  color: #333;
+}
+#wrapper-page #main-nav-page .navbar-toggler .bar {
+  width: 100%;
+  height: 3px;
+  border-radius: 4px;
+  background-color: #fff;
+  margin-bottom: 0.3rem;
+}
+#wrapper-page #main-nav-page .navbar-toggler .title {
+  color: #fff;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+@media (min-width: 992px) {
+  #wrapper-page #main-nav-page .brand-name a img {
+    max-width: 200px;
+  }
+  #wrapper-page #main-nav-page .brand-name a img.active {
     max-width: 120px;
   }
 }
