@@ -1,7 +1,7 @@
-.news {
+.news-section {
     position: relative;
 	min-height: 100vh;
-    background: rgb(246, 242, 237);
+    background: lightgray;
     &__view--all {
         display: block;
         margin: auto;
@@ -33,16 +33,16 @@
         overflow: hidden;
         box-shadow: 0 1rem 3rem 0 rgba(50, 50, 50, 0.16);
         margin-bottom: 3.5rem;
-        &:hover .news__grid-box {
+        &:hover .news-section__grid-box {
             left: 15px;
             transition: .5s;
         }
-        &:hover .news__grid-img img {
+        &:hover .news-section__grid-img img {
             filter: grayscale(1);
             transform: scale(1.1);
             transition: .5s;
         }
-        &:hover .news__grid-txt {
+        &:hover .news-section__grid-txt {
             text-decoration-line: none;
             color: #fff;
             letter-spacing: .2rem;

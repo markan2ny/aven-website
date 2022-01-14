@@ -14,6 +14,7 @@ window.addEventListener('scroll', function() {
     headerTxtColor.classList.toggle('active', window.scrollY >= 100);
     toggleBlack.classList.toggle('active', window.scrollY >= 100);
     logo.classList.toggle('active', window.scrollY >= 100);
+    
 
 	
 });

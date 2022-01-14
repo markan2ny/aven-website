@@ -1,13 +1,92 @@
-#single-wrapper {
+.wrapper {
     position: relative;
     background: lightgray;
     padding: 0;
-
-    #main {
-        margin: 50px 20px;
-        .single-post-article {
-            
+    margin: 0;
+    #right-sidebar {
+        margin: 0px 20px 50px;
+        
+        label {
+            display: none;
         }
+        input.wp-block-search__input {
+            padding: 10px;
+            font-size: 20px;
+            outline: none;
+        }
+        button.wp-block-search__button {
+            background: #1e22aa;
+            transition: .3s;
+            color: #fff;
+            font-size: 20px;
+            padding: 0px 20px;
+            &:hover {
+                background: #974555;
+            }
+      
+        }
+        #dpe_fp_widget-2 {
+            position: relative;
+            margin-top: 2.5rem ;
+            margin-bottom: 4rem;
+            h3 {
+                font-size: 2rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                color: #444;
+            }
+            ul.dpe-flexible-posts {
+                margin-top: 2.5rem;
+                li {
+                    list-style: none;
+                    margin-bottom: 1.2rem;
+                    a {
+                        display: flex;
+                        align-items: center;
+                        text-decoration: none;
+                        color: #333;
+                        transition: .3s;
+                        &:hover {
+                            color: #1e22aa;
+                        }
+                        img {
+                            width: 70px;
+                            object-fit: contain;
+                            margin-right: 2rem;
+                        }
+                    }
+                }
+            }
+        }
+        @media (min-width: 768px) {  
+
+            margin: 10rem 0 0 0;
+            padding: 0;
+
+            button.wp-block-search__button {
+                font-size: 1.2rem;
+                padding: 0px 13px;
+                text-transform: uppercase;
+            }
+            input.wp-block-search__input {
+                font-size: 1rem;
+            }
+        }
+        @media (min-width: 992px) {
+            margin: 13rem 0 0 0;
+            input.wp-block-search__input {
+                font-size: 1.5rem;
+            }
+            button.wp-block-search__button {
+                font-size: 1.5rem;
+            }
+        }
+    }
+    #main {
+        margin-bottom: 50px;
+        margin-right: 0;
+        margin-left: 0;
 
         img.wp-post-image {
             width: 100%;
@@ -38,7 +117,7 @@
                     text-decoration-line: none;
                     outline: none;
                     padding: 10px 20px;
-                    background: crimson;
+                    background: #1e22aa;
                     color: #fff;
                     text-transform: uppercase;
                     letter-spacing: 2px;
@@ -57,16 +136,18 @@
                 a {
                     color: #333;
                     font-size: 20px;
-                    text-decoration: none;
                 }
             }
             .nav-next {
                 a {
                     font-size: 20px;
                     color: #333;
-                    text-decoration: none;
                 }
             }
+        }
+        @media (min-width: 992px) {
+            margin-top: 13rem;
+            margin-bottom: 10rem;
         }
     }
 }

@@ -38,8 +38,9 @@ defined( 'ABSPATH' ) || exit;
             <div class="footer__company--address">
                 <h3>Address</h3>
                 <ul>
-                    <li><i class="fa fa-location-arrow" aria-hidden="true"></i> 127 Rizal Street</li>
-                    <li><i class="fa fa-phone" aria-hidden="true"></i> +6399 999 9999</li>
+                    <li><i class="fa fa-location-arrow" aria-hidden="true"></i> 1072 JP. Rizal St. Sta. Barbara Baliuag, Bulacan</li>
+                    <li><i class="fa fa-email" aria-hidden="true"></i> hrdepartment@avenfashion.com.ph</li>
+                    <li><i class="fa fa-phone" aria-hidden="true"></i> (044) 766 5536</li>
                     <li><i class="fa fa-map-marker" aria-hidden="true"></i> Baliwag, Bulacan</li>
                 </ul>
             </div>

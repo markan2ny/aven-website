@@ -27,11 +27,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="site" id="page">
 
 	<!-- ******************* The Navbar Area ******************* -->
-	<div id="<?php echo (is_front_page()) ? "wrapper-navbar" : "wrapper-page" ?>">
+	<div id="wrapper-navbar" <?php echo ( ! is_front_page(  )) ? 'class="wrapper-nav"' : ''; ?>>
 
 		<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
 	
-		<nav id="<?php echo (is_front_page()) ? "main-nav" : "main-nav-page"; ?>" class="navbar navbar-expand-lg" aria-labelledby="main-nav-label">
+		<nav id="main-nav" class="navbar navbar-expand-lg <?php echo ( ! is_front_page(  )) ? 'nav-page' : '';?>" aria-labelledby="main-nav-label">
 
 			<h2 id="main-nav-label" class="sr-only">
 				<?php esc_html_e( 'Main Navigation', 'understrap' ); ?>
@@ -40,7 +40,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<?php if ( 'container' === $container ) : ?>
 			<div class="container">
 		<?php endif; ?>
-			<div class="brand-name">
+			<div class="brand-name" id="<?php echo ( ! is_front_page(  )) ? 'brand-name' : ''; ?>">
 				<!-- Your site title as branding in the menu -->
 				<?php if ( ! has_custom_logo() ): ?>
 						<a href="<?php echo home_url( ); ?>">Aven Fashion</a>
