@@ -1,0 +1,27 @@
+#archive-content { //parent
+    position: relative;
+    #main {
+        position: relative;
+        article {
+            margin-bottom: 60px;
+            .entry-header {
+                padding: 0;
+                .entry-title{
+                    font-size: 3rem;
+                    a {
+                        text-decoration: none;
+                    }
+                }
+            }
+            .entry-content {
+                padding: 0;
+                
+                footer {
+                    padding: 0;
+                }
+            }
+
+        }
+    }
+
+}

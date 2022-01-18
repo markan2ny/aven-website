@@ -19,15 +19,13 @@
 // Header & Footer
 @import "theme/header";
 @import "theme/footer";
-@import "theme/searchpage";
 
 // Homepage
 @import "theme/homepage/about";
 @import "theme/homepage/hero";
 @import "theme/homepage/news";
 @import "theme/homepage/mission";
-
-//Production
-@import "theme/singlepage";
-@import "theme/production/prod_header";
+@import "theme/pages/singlepage";
+@import "theme/pages/searchpage";
+@import "theme/pages/archive";
 

@@ -1,0 +1,30 @@
+#main {
+    .search-main-container {
+        background: lightgray;
+        padding: 0 20px;
+        .page-header {
+            margin-bottom: 6rem;
+            .page-title {
+                text-transform: uppercase;
+            }
+        }
+        .entry-header {
+            padding: 0;
+            .entry-title {
+                text-transform: uppercase;
+            }
+        }
+        .entry-summary {
+            p {
+                font-size: 18px;
+            }
+            a {
+                display: none;
+            }
+        }
+
+        .search-per-result {
+            margin-bottom: 25px;
+        }
+    }
+}

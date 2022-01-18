@@ -16108,24 +16108,13 @@ body {
   margin: 0 0 6rem;
 }
 .aven-section-title h1 {
-  font-size: 3.5rem;
+  font-family: Barlow, sans-serif;
   font-weight: 700;
-  color: #333;
+  font-size: 35px;
+  text-transform: uppercase;
+  color: #007491;
   display: inline;
   position: relative;
-}
-.aven-section-title h1 span {
-  color: #00ccff;
-}
-.aven-section-title h1::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 0.2rem;
-  background: #333;
-  margin: 0.5rem 0 0;
 }
 .aven-section-title p {
   font-size: 1.4rem;
@@ -16163,6 +16152,31 @@ body {
 }
 #wrapper-navbar.wrapper-nav #main-nav ul li > a {
   color: #333;
+}
+#wrapper-navbar.wrapper-nav #main-nav .navbar-toggler {
+  position: relative;
+}
+#wrapper-navbar.wrapper-nav #main-nav .navbar-toggler.active {
+  color: #333;
+}
+#wrapper-navbar.wrapper-nav #main-nav .navbar-toggler.active .bar {
+  background-color: #333;
+}
+#wrapper-navbar.wrapper-nav #main-nav .navbar-toggler.active .title {
+  color: #333;
+}
+#wrapper-navbar.wrapper-nav #main-nav .navbar-toggler .bar {
+  width: 100%;
+  height: 3px;
+  border-radius: 4px;
+  background-color: #333;
+  margin-bottom: 0.3rem;
+}
+#wrapper-navbar.wrapper-nav #main-nav .navbar-toggler .title {
+  color: #333;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 #wrapper-navbar .container {
   max-width: 1800px !important;
@@ -16632,9 +16646,14 @@ body {
 
 .wrapper {
   position: relative;
-  background: lightgray;
+  background: #fff;
   padding: 0;
-  margin: 0;
+  margin: 51.76px 0 0;
+}
+@media (min-width: 992px) {
+  .wrapper {
+    margin: 82.12px 0 0;
+  }
 }
 .wrapper #right-sidebar {
   margin: 0px 20px 50px;
@@ -16657,6 +16676,13 @@ body {
 }
 .wrapper #right-sidebar button.wp-block-search__button:hover {
   background: #974555;
+}
+.wrapper #right-sidebar #block-10 h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #444;
 }
 .wrapper #right-sidebar #dpe_fp_widget-2 {
   position: relative;
@@ -16714,7 +16740,7 @@ body {
 }
 @media (min-width: 992px) {
   .wrapper #right-sidebar {
-    margin: 13rem 0 0 0;
+    margin: 13rem 0;
   }
   .wrapper #right-sidebar input.wp-block-search__input {
     font-size: 1.5rem;
@@ -16736,7 +16762,7 @@ body {
   object-fit: contain;
 }
 .wrapper #main .entry-header {
-  padding: 50px 20px 10px;
+  padding: 1.6rem 4rem 1rem;
 }
 .wrapper #main .entry-header h1 {
   font-size: 3rem;
@@ -16745,12 +16771,12 @@ body {
   font-size: 1.6rem;
 }
 .wrapper #main .entry-content {
-  padding: 20px 20px 10px;
+  padding: 20px 40px 10px;
   font-size: 1.8rem;
   line-height: 2;
 }
 .wrapper #main .entry-footer {
-  padding: 20px 20px 40px;
+  padding: 20px 40px 40px;
 }
 .wrapper #main .entry-footer .edit-link a {
   -webkit-text-decoration-line: none;
@@ -16769,7 +16795,7 @@ body {
   background: #c73551;
 }
 .wrapper #main .post-navigation {
-  padding: 20px 30px;
+  padding: 20px 45px 40px;
 }
 .wrapper #main .post-navigation .nav-previous a {
   color: #333;
@@ -16781,13 +16807,59 @@ body {
 }
 @media (min-width: 992px) {
   .wrapper #main {
-    margin-top: 13rem;
     margin-bottom: 10rem;
   }
 }
 
-.prod {
-  min-height: 100vh;
+#main .search-main-container {
+  background: lightgray;
+  padding: 0 20px;
+}
+#main .search-main-container .page-header {
+  margin-bottom: 6rem;
+}
+#main .search-main-container .page-header .page-title {
+  text-transform: uppercase;
+}
+#main .search-main-container .entry-header {
+  padding: 0;
+}
+#main .search-main-container .entry-header .entry-title {
+  text-transform: uppercase;
+}
+#main .search-main-container .entry-summary p {
+  font-size: 18px;
+}
+#main .search-main-container .entry-summary a {
+  display: none;
+}
+#main .search-main-container .search-per-result {
+  margin-bottom: 25px;
+}
+
+#archive-content {
+  position: relative;
+}
+#archive-content #main {
+  position: relative;
+}
+#archive-content #main article {
+  margin-bottom: 60px;
+}
+#archive-content #main article .entry-header {
+  padding: 0;
+}
+#archive-content #main article .entry-header .entry-title {
+  font-size: 3rem;
+}
+#archive-content #main article .entry-header .entry-title a {
+  text-decoration: none;
+}
+#archive-content #main article .entry-content {
+  padding: 0;
+}
+#archive-content #main article .entry-content footer {
+  padding: 0;
 }
 
 /*# sourceMappingURL=theme.css.map */

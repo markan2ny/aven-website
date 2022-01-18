@@ -14,7 +14,7 @@
            
             </div>
         <div class="news-section__view--all">
-            <a href="#">View All <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+            <a href="/news">View All <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
         </div>
         </div>
     </div>

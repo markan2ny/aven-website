@@ -24,6 +24,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<?php get_template_part( 'global-templates/left-sidebar-check' ); ?>
 
 			<main class="site-main" id="main">
+				<div class="search-main-container">
 
 				<?php if ( have_posts() ) : ?>
 
@@ -33,8 +34,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 								<?php
 								printf(
 									/* translators: %s: query term */
-									esc_html__( 'Search Results for: %s', 'understrap' ),
-									'<span>' . get_search_query() . '</span>'
+									esc_html__( 'Search Results for: " %s', 'understrap' ),
+									'<span>' . get_search_query() . '</span> "'
 								);
 								?>
 							</h1>
@@ -55,12 +56,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 					endwhile;
 					?>
 
-				<?php else : ?>
+					<?php else : ?>
 
-					<?php get_template_part( 'loop-templates/content', 'none' ); ?>
+						<?php get_template_part( 'loop-templates/content', 'none' ); ?>
 
-				<?php endif; ?>
-
+					<?php endif; ?>
+				</div>
 			</main><!-- #main -->
 
 			<!-- The pagination component -->
