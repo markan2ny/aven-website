@@ -13,6 +13,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
 <div class="wrapper p-0" id="single-wrapper">
+<?php echo do_shortcode( '[fl_builder_insert_layout id="226"]' )?>
 
 	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
 

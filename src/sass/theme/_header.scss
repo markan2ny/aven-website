@@ -11,46 +11,46 @@
 	transition: 0.3s ease-in-out;
 
 	// Sub pages
-	&.wrapper-nav {
-		background: #fff;
-		padding: 0;
-		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+	// &.wrapper-nav {
+	// 	background: transparent;
+	// 	padding: 0;
+	// 	// box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 
-		#main-nav {
-			ul {
-				li > a {
-					color: #333;
-				}
-			}
-			.navbar-toggler {
-				position: relative;
-				&.active {
-					color: #333;
-					.bar {
-						background-color: #333;
-					}
-					.title {
-						color: #333;
-					}
-				}
-				.bar {
-					width: 100%;
-					height: 3px;
-					border-radius: 4px;
-					background-color: #333;
-					margin-bottom: 0.3rem;
-				}
-				.title {
-					color: #333;
-					font-size: 1rem;
-					text-transform: uppercase;
-					font-weight: 600;
-				}
-			}
-		}
+	// 	#main-nav {
+	// 		ul {
+	// 			li > a {
+	// 				color: #333;
+	// 			}
+	// 		}
+	// 		.navbar-toggler {
+	// 			position: relative;
+	// 			&.active {
+	// 				color: #333;
+	// 				.bar {
+	// 					background-color: #333;
+	// 				}
+	// 				.title {
+	// 					color: #333;
+	// 				}
+	// 			}
+	// 			.bar {
+	// 				width: 100%;
+	// 				height: 3px;
+	// 				border-radius: 4px;
+	// 				background-color: #333;
+	// 				margin-bottom: 0.3rem;
+	// 			}
+	// 			.title {
+	// 				color: #333;
+	// 				font-size: 1rem;
+	// 				text-transform: uppercase;
+	// 				font-weight: 600;
+	// 			}
+	// 		}
+	// 	}
 		
 
-	}
+	// }
 
 	.container {
 		max-width: 1800px !important; //override bootstrap max-with

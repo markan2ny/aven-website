@@ -20,6 +20,7 @@ get_header();
 ?>
 <div class="wrapper" id="page-wrapper">
 	<div id="content" tabindex="-1">
+		
 		<div class="row">
 
 			<!-- Do the left sidebar check -->
