@@ -18,7 +18,7 @@ $loop = new WP_Query($args);
 if($loop->have_posts()):
     while($loop->have_posts(  )): $loop->the_post(); 
 ?>
-<div class="col-lg-4 col-md-4">
+<div class="col-lg-4 col-md-6 col-12">
     <div class="news-section__grid">
         <div class="news-section__grid-img">
             <?php if( has_post_thumbnail( )):?>

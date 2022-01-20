@@ -8,7 +8,7 @@
         margin-top: 3rem;
         text-align: center;
         a {
-            padding: 2rem 6rem;
+            padding: 1rem 3rem;
             background: #028FCD;
             font-size: 2rem;
             color: #fff;
@@ -18,6 +18,9 @@
             line-height: 170%;
             text-decoration: none;
             transition: .5s;
+            @media (min-width: $md) {
+                padding: 2rem 5rem;
+            }
         }
         &:hover {
             a {
@@ -151,6 +154,7 @@
                 &:hover {
                     background: #126f87;
                 }
+             
             }
         }
     }

@@ -16096,11 +16096,11 @@ figure.woocommerce-product-gallery__wrapper {
 html {
   scroll-behavior: smooth;
   font-size: 10px;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
   position: relative;
-  font-family: "Barlow", sans-serif;
 }
 
 .aven-section-title {
@@ -16108,7 +16108,6 @@ body {
   margin: 0 0 6rem;
 }
 .aven-section-title h1 {
-  font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 35px;
   text-transform: uppercase;
@@ -16168,7 +16167,7 @@ body {
   color: #028FCD;
 }
 #wrapper-navbar #main-nav .brand-name a img {
-  max-width: 120px;
+  max-width: 100px;
   width: 100%;
   -o-object-fit: contain;
   object-fit: contain;
@@ -16244,18 +16243,13 @@ body {
   height: auto;
   padding: 50px 30px;
   background: #333;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-flex: wrap;
-  -ms-flex: wrap;
-  flex: wrap;
+}
+.footer .container {
+  max-width: 1800px !important;
 }
 .footer .aboutus {
   position: relative;
+  margin-bottom: 20px;
 }
 .footer .aboutus h1 {
   font-size: 35px;
@@ -16265,11 +16259,22 @@ body {
 .footer .aboutus h1 span {
   color: #028FCD;
 }
+@media (min-width: 768px) {
+  .footer .aboutus h1 {
+    font-size: 40px;
+  }
+}
+@media (min-width: 992px) {
+  .footer .aboutus h1 {
+    font-size: 50px;
+  }
+}
 .footer .aboutus p {
   color: #999;
   font-size: 16px;
   font-weight: 200;
   text-align: justify;
+  margin: 15px 0;
 }
 .footer .aboutus .sci {
   display: -webkit-flex;
@@ -16306,11 +16311,125 @@ body {
   color: #fff;
   font-size: 20px;
 }
+.footer .quicklinks {
+  position: relative;
+  margin: 0 auto;
+}
+.footer .quicklinks h1 {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .footer .quicklinks h1 {
+    font-size: 20px;
+  }
+}
+.footer .quicklinks h1 span {
+  color: #028FCD;
+}
+.footer .quicklinks .menu-footer-menu-container {
+  margin: 20px 0;
+}
+.footer .quicklinks .menu-footer-menu-container #footer_menu {
+  position: relative;
+}
+.footer .quicklinks .menu-footer-menu-container #footer_menu li {
+  list-style: none;
+}
+.footer .quicklinks .menu-footer-menu-container #footer_menu li a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 200;
+  font-family: "Poppins", sans-serif;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.footer .quicklinks .menu-footer-menu-container #footer_menu li a:hover {
+  color: #028FCD;
+}
+.footer .contact {
+  position: relative;
+  margin: 20px 0;
+}
+@media (min-width: 768px) {
+  .footer .contact {
+    margin: 0;
+  }
+}
+.footer .contact h1 {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .footer .contact h1 {
+    font-size: 20px;
+  }
+}
+.footer .contact h1 span {
+  color: #028FCD;
+}
+.footer .contact .info {
+  position: relative;
+}
+.footer .contact .info li {
+  list-style: none;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 16px;
+}
+.footer .contact .info li span {
+  color: #999;
+  font-size: 16px;
+}
+.footer .contact .info li span:nth-child(1) {
+  color: #fff;
+  font-size: 20px;
+  margin-right: 10px;
+}
+.footer .contact .info li span a {
+  color: #999;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.footer .contact .info li span a:hover {
+  color: #028FCD;
+}
+.footer .maps {
+  position: relative;
+}
+@media (min-width: 768px) {
+  .footer .maps {
+    margin: 20px 0;
+  }
+}
+.footer .maps iframe {
+  width: 100%;
+}
+
+.copyrightTxt {
+  width: 100%;
+  background: #181818;
+  padding: 8px 100px;
+  text-align: center;
+  color: #999;
+  font-size: 15px;
+}
+.copyrightTxt p {
+  margin: 0;
+}
 
 .about {
   position: relative;
   width: 100%;
   overflow: hidden;
+  background: #fff;
 }
 .about__img--box {
   max-width: 100%;
@@ -16415,7 +16534,7 @@ body {
   text-align: center;
 }
 .news-section__view--all a {
-  padding: 2rem 6rem;
+  padding: 1rem 3rem;
   background: #028FCD;
   font-size: 2rem;
   color: #fff;
@@ -16426,6 +16545,11 @@ body {
   text-decoration: none;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+@media (min-width: 768px) {
+  .news-section__view--all a {
+    padding: 2rem 5rem;
+  }
 }
 .news-section__view--all:hover a {
   background: #126f87;
