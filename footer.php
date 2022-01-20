@@ -9,48 +9,51 @@
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
+$container = get_theme_mod( 'understrap_container_type' );
 
 ?>
 
-<div class="footer">
-    <div class="footer__container container">
+<footer class="footer">
     <div class="row">
         <div class="col-lg-4 col-md-4 col-12">
-            <div class="footer__company--details">
-                <img src="<?php echo bloginfo( 'template_directory' )."/img/1.png"?>" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero recusandae</p>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-6">
-            <div class="footer__subsidiary">
-                <h3>Subsidiary</h3>
-                <ul>
-                    <li>TELADEORO</li>
-                    <li>TELADEORO</li>
-                    <li>STA. ROSTA</li>
-                    <li>STA. ROSTA</li>
-                    <li>PEACH</li>
-                    <li>PEACH</li>
+            <div class="aboutus">
+                <h1>AVEN <span>FASHION</span></h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi adipisci alias et nulla harum debitis enim quia suscipit ducimus accusantium!</p>
+                <ul class="sci">
+                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
                 </ul>
             </div>
         </div>
-        <div class="col-lg-4 col-md-4 col-6">
-            <div class="footer__company--address">
-                <h3>Address</h3>
-                <ul>
-                    <li><i class="fa fa-location-arrow" aria-hidden="true"></i> 1072 JP. Rizal St. Sta. Barbara Baliuag, Bulacan</li>
-                    <li><i class="fa fa-email" aria-hidden="true"></i> hrdepartment@avenfashion.com.ph</li>
-                    <li><i class="fa fa-phone" aria-hidden="true"></i> (044) 766 5536</li>
-                    <li><i class="fa fa-map-marker" aria-hidden="true"></i> Baliwag, Bulacan</li>
-                </ul>
+        <div class="col-lg-4 col-md-4 col-12">
+            <div class="quicklinks">
+                <h1>Quick <span>Links</span></h1>
+                <?php
+                    wp_nav_menu(
+                        array(
+                            'theme_location'  => 'primary',
+                            'container_class' => 'collapse navbar-collapse',
+                            'container_id'    => 'navbarNavDropdown',
+                            'menu_class'      => 'navbar-nav ml-auto',
+                            'fallback_cb'     => '',
+                            'menu_id'         => 'main-menu',
+                            'depth'           => 2,
+                            'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
+                        )
+                    );
+				?>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12">
+            <div class="aboutus">
+                <h1>SAMPLE</h1>
             </div>
         </div>
     </div>
-    </div>
-    <div class="footer__IT--Mark">
-        <p>Design and Develop by <span>AVEN | I.T DEPARTMENT</span>. All right reserved 2022</p>
-    </div>
-</div>
+     
+</footer>
 
 
 <?php wp_footer(); ?>

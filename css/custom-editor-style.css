@@ -117,7 +117,7 @@ sup {
 }
 
 a {
-  color: royalblue;
+  color: #4169e1;
   text-decoration: none;
   background-color: transparent;
 }
@@ -329,7 +329,7 @@ template {
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
-  --primary: royalblue;
+  --primary: #4169e1;
   --secondary: #6c757d;
   --success: #28a745;
   --info: #17a2b8;
@@ -935,12 +935,12 @@ mark,
 
 .has-primary-color,
 .has-primary-color:visited {
-  color: royalblue;
+  color: #4169e1;
 }
 
 .has-primary-background-color {
-  background-color: royalblue;
-  border-color: royalblue;
+  background-color: #4169e1;
+  border-color: #4169e1;
 }
 
 .has-secondary-color,

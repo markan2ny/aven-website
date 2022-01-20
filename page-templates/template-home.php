@@ -19,7 +19,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 get_template_part( 'global-templates/header','hero' );
 get_template_part( 'global-templates/header','about' );
 get_template_part( 'global-templates/header','news' );
-get_template_part( 'global-templates/header','mission-vission' );
+// get_template_part( 'global-templates/header','mission-vission' );
 
 
 get_footer();
