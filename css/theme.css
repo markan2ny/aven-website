@@ -16403,10 +16403,11 @@ body {
 }
 .footer .maps {
   position: relative;
+  margin: 20px 0;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .footer .maps {
-    margin: 20px 0;
+    margin: 0;
   }
 }
 .footer .maps iframe {
@@ -16580,9 +16581,11 @@ body {
   -webkit-text-decoration-line: none;
   text-decoration-line: none;
   color: #fff;
-  letter-spacing: 0.2rem;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+.news-section__grid:hover .news-section__grid-txt a.understrap-read-more-link {
+  background: crimson;
 }
 .news-section__grid-img {
   width: 100%;
@@ -16592,8 +16595,8 @@ body {
 .news-section__grid-img img {
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-  object-fit: contain;
+  -o-object-fit: cover;
+  object-fit: cover;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -16626,17 +16629,16 @@ body {
   padding: 2.5rem;
 }
 .news-section__grid-txt span {
-  color: #028FCD;
-  font-size: 1.3rem;
+  color: #999;
+  font-size: 10px;
   font-weight: 500;
-  letter-spacing: 0.4rem;
+  letter-spacing: 0.1rem;
   text-transform: uppercase;
 }
 .news-section__grid-txt h2 {
-  color: #111;
-  font-size: 2rem;
+  color: #028FCD;
+  font-size: 22px;
   font-weight: 500;
-  letter-spacing: 0.1rem;
   margin: 1rem 0 0.5rem 0;
 }
 .news-section__grid-txt ul {
@@ -16647,10 +16649,9 @@ body {
   list-style: none;
   display: inline-block;
   color: #999;
-  font-size: 1.6rem;
+  font-size: 14px;
   font-weight: 300;
   margin: 0.8rem 1rem 0.8rem 0;
-  letter-spacing: 0.1rem;
   text-transform: capitalize;
 }
 .news-section__grid-txt ul li i {
@@ -16661,12 +16662,14 @@ body {
 }
 .news-section__grid-txt p {
   color: #222;
-  font-size: 1.4rem;
+  font-size: 18px;
   font-weight: 300;
-  line-height: 170%;
-  letter-spacing: 1.5px;
-  padding-bottom: 1.5rem;
-  margin-bottom: 2.5rem;
+  line-height: 1.7;
+  padding: 15px 0;
+  margin: 0;
+}
+.news-section__grid-txt p:last-child {
+  margin: 0;
 }
 .news-section__grid-txt p:last-child a.understrap-read-more-link {
   color: #fff;
@@ -16684,9 +16687,6 @@ body {
   border-color: none !important;
   border: none !important;
   outline: none !important;
-}
-.news-section__grid-txt p:last-child a.understrap-read-more-link:hover {
-  background: #126f87;
 }
 
 .mission-vission {

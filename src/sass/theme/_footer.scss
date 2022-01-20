@@ -142,9 +142,11 @@
 	}
 	.maps {
 		position: relative;
-		@media (min-width: $md) {
-			margin: 20px 0;
+		margin: 20px 0;
+		@media (min-width: $lg) {
+			margin: 0;
 		}
+
 		iframe {
 			width: 100%;
 		}

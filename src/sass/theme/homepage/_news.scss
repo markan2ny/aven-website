@@ -48,8 +48,10 @@
         &:hover .news-section__grid-txt {
             text-decoration-line: none;
             color: #fff;
-            letter-spacing: .2rem;
             transition: .5s;
+            a.understrap-read-more-link {
+                background: crimson;
+            }
         }
     }
     &__grid-img {
@@ -60,7 +62,7 @@
         img {
             width: 100%;
             height: 100%;
-            object-fit: contain;
+            object-fit: cover;
             transition: .5s;
         }
     }
@@ -92,17 +94,16 @@
     &__grid-txt {
         padding: 2.5rem;
         span {
-            color: #028FCD;
-            font-size: 1.3rem;
+            color: #999;
+            font-size: 10px;
             font-weight: 500;
-            letter-spacing: .4rem;
+            letter-spacing: .1rem;
             text-transform: uppercase;
         }
         h2 {
-            color: #111;
-            font-size: 2rem;
+            color: #028FCD;
+            font-size: 22px;
             font-weight: 500;
-            letter-spacing: .1rem;
             margin: 1rem 0 .5rem 0;
         }
         ul {
@@ -112,10 +113,9 @@
                 list-style: none;
                 display: inline-block;
                 color: #999;
-                font-size: 1.6rem;
+                font-size: 14px;
                 font-weight: 300;
                 margin: .8rem 1rem .8rem 0;
-                letter-spacing: .1rem;
                 text-transform: capitalize;
                 i {
                     color: #028FCD;
@@ -127,15 +127,14 @@
         }
         p {
             color: #222;
-            font-size: 1.4rem;
+            font-size: 18px;
             font-weight: 300;
-            line-height: 170%;
-            letter-spacing: 1.5px;
-            padding-bottom: 1.5rem;
-            margin-bottom: 2.5rem;
+            line-height: 1.7;
+            padding: 15px 0;
+            margin: 0;
         }
         p:last-child {
-
+            margin: 0;
             a.understrap-read-more-link {
                 color: #fff;
                 background: #028FCD;
@@ -151,10 +150,6 @@
                 border-color: none !important;
                 border: none !important;
                 outline: none !important;
-                &:hover {
-                    background: #126f87;
-                }
-             
             }
         }
     }
