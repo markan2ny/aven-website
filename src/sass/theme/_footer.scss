@@ -10,10 +10,17 @@
 	.aboutus {
 		position: relative;
 		margin-bottom: 20px;
+		.sub {
+			color: #999;
+			font-size: 17px;
+			font-weight: 600;
+			letter-spacing: 2px;
+		}
 		h1 {
 			font-size: 35px;
 			color: #fff;
 			font-weight: 700;
+			margin: 0;
 			span {
 				color: #028FCD;
 			}
@@ -116,6 +123,7 @@
 		}
 		.info {
 			position: relative;
+			margin: 20px 0;
 			li {
 				list-style: none;
 				display: flex;

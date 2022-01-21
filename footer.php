@@ -19,6 +19,7 @@ $container = get_theme_mod( 'understrap_container_type' );
             <div class="col-lg-4 col-md-12 col-12">
                 <div class="aboutus">
                     <h1>AVEN <span>FASHION</span></h1>
+                    <span class="sub"><span>MANUFACTURING</span> INC.</span>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi adipisci alias et nulla harum debitis enim quia suscipit ducimus accusantium!</p>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi adipisci alias et nulla harum debitis enim quia suscipit ducimus accusantium!</p>
                     <ul class="sci">
@@ -70,7 +71,7 @@ $container = get_theme_mod( 'understrap_container_type' );
     </div>
 </footer>
 <div class="copyrightTxt">
-    <p>Copyright &copy; 2022 AVEN FASHION MANUFACTURING INC. All Rights Reserved.</p>
+    <p>Copyright &copy; 2022 AVEN FASHION MANUFACTURING INC | IT DEPARTMENT. All Rights Reserved.</p>
 </div>
 
 <?php wp_footer(); ?>

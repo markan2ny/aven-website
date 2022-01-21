@@ -1,0 +1,36 @@
+#careers_accordion {
+    position: relative;
+    .fl-accordion-item {
+        .fl-accordion-button-label {
+            outline: none !important;
+        }
+        .fl-accordion-button-icon {
+            outline: none !important;
+            i {
+                outline: none !important;
+            }
+        }
+    }
+}
+
+#careers_intership {
+    position: relative;
+    ul {
+        margin: 0;
+        padding: 0;
+        li {
+            list-style: none;
+            display: flex;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 200;
+            margin-bottom: 10px;
+            span:first-child {
+                margin-right: 10px;
+            }
+        }
+    }
+    .careers_left_req {
+  
+    }
+}
