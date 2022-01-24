@@ -17,10 +17,11 @@ $sm: 576px;
 html {
 	scroll-behavior: smooth;
 	font-size: 10px;
-	font-family: 'Poppins', sans-serif;
 }
 body {
 	position: relative;
+	font-family: 'Poppins', sans-serif;
+
 }
 // end...
 .aven-section-title {
@@ -41,13 +42,12 @@ body {
 }
 .aven-section-padding {
 	position: relative;
-	padding: 5rem 1rem 10rem;
 	width: 100%;
 }
 
-section.fullpage {
-	@media (min-width: 992px) {
-		display: grid;
-		place-items: center;
+.section-padding {
+	padding: 50px 30px;
+	@media (min-width: $lg) {
+		padding: 100px 0 50px;
 	}
 }

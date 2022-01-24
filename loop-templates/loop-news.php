@@ -35,8 +35,8 @@ if($loop->have_posts()):
             <span>News & Announcement</span>
             <h2><?php the_title(); ?></h2>
             <ul>
-                <li><i class="fa fa-calendar"></i> <?php the_time( 'M j, Y' ); ?></li>
-                <li><i class="fa fa-user" aria-hidden="true"></i> <?php the_author(); ?></li>
+                <li><i class="fas fa-calendar-alt"></i> <?php the_time( 'M j, Y' ); ?></li>
+                <li><i class="fas fa-user"></i> <?php the_author(); ?></li>
             </ul>
             <?php the_excerpt(  ); ?>
             <!-- <a href="#">Read More</a> -->

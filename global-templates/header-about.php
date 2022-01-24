@@ -1,4 +1,4 @@
-<section class="about">
+<section class="about section-padding">
     <div class="container aven-section-padding">
         <div class="text-center aven-section-title">
             <h1>Our <span>Company</span></h1>

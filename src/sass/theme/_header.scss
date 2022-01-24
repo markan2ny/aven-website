@@ -95,10 +95,10 @@
 			li {
 				margin-right: 10px;
 				a {
-					font-size: 1.6rem;
+					font-size: 15px;
 					color: #fff;
 					text-transform: uppercase;
-					font-weight: 700;
+					font-weight: 400;
 					letter-spacing: 0.2rem;
 					&:hover {
 						color: #028FCD;
@@ -107,7 +107,11 @@
 				&.current-menu-item {
 					a {
 						color: #028FCD;
+						font-weight: 500;
 					}
+				}
+				&:last-child {
+					margin-right: 0px;
 				}
 			}
 			.dropdown-menu {

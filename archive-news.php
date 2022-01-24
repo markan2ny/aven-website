@@ -65,7 +65,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                                     <div class="entry-content">
 
                                         <?php
-                                        the_content( );
+                                        the_excerpt( );
                                         understrap_link_pages();
                                         ?>
 

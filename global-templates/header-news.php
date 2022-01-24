@@ -1,4 +1,4 @@
-<section class="news-section fullpage">
+<section class="news-section section-padding">
     <div class="container news-section__content--container aven-section-padding">
         <div class="text-center aven-section-title">
             <h1>Recent <span>New's</span></h1>
@@ -14,7 +14,7 @@
            
             </div>
         <div class="news-section__view--all">
-            <a href="/news">View All <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+            <a href="/news">See More <i class="fas fa-arrow-circle-right"></i></a>
         </div>
         </div>
     </div>

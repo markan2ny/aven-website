@@ -86,7 +86,7 @@
             }
         }
         @media (min-width: 992px) {
-            margin: 13rem 0;
+            margin: 10rem 0;
             input.wp-block-search__input {
                 font-size: 1.5rem;
             }
@@ -110,6 +110,7 @@
         
         .entry-header {
             padding: 1.6rem 0 1rem;
+            margin-bottom: 30px;
             h1 {
                 font-size: 3rem;
             }
@@ -119,8 +120,12 @@
         }
         .entry-content {
             padding:  20px 0 10px;
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             line-height: 2;
+            font-weight: 300;
+            @media (min-width: $lg) {
+                font-size: 1.8rem;
+            }
         }
         .entry-footer {
             padding: 20px 0 40px;

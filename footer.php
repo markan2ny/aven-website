@@ -12,7 +12,6 @@ defined( 'ABSPATH' ) || exit;
 $container = get_theme_mod( 'understrap_container_type' );
 
 ?>
-
 <footer class="footer">
     <div class="container">
         <div class="row">
@@ -23,10 +22,8 @@ $container = get_theme_mod( 'understrap_container_type' );
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi adipisci alias et nulla harum debitis enim quia suscipit ducimus accusantium!</p>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi adipisci alias et nulla harum debitis enim quia suscipit ducimus accusantium!</p>
                     <ul class="sci">
-                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -48,15 +45,15 @@ $container = get_theme_mod( 'understrap_container_type' );
                     <h1>Contact <span>Us</span></h1>
                     <ul class="info">
                         <li>
-                            <span><i class="fa fa-map-marker" aria-hidden="true"></i> </span>
+                            <span><i class="fas fa-map-marker-alt"></i></i> </span>
                             <span> 1072 JP. Rizal St. Sta. Barbara <br>Baliuag, Bulacan</span>
                         </li>
                         <li>
-                            <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                            <span><i class="fas fa-envelope-square"></i></span>
                             <span><a href="mailto: hrdepartment@avenfashion.com.ph">hrdepartment@avenfashion.com.ph</a></span>
                         </li>
                         <li>
-                            <span><i class="fa fa-phone-square" aria-hidden="true"></i></span>
+                            <span><i class="fas fa-phone-square"></i></i></span>
                             <span><a href="tel:(044)7665536">(044) 766 5536</a></span>
                         </li>
                     </ul>
@@ -71,7 +68,7 @@ $container = get_theme_mod( 'understrap_container_type' );
     </div>
 </footer>
 <div class="copyrightTxt">
-    <p>Copyright &copy; 2022 AVEN FASHION MANUFACTURING INC | IT DEPARTMENT. All Rights Reserved.</p>
+    <p>Copyright &copy; 2022 AVEN FASHION MANUFACTURING INC. | IT DEPARTMENT. All Rights Reserved.</p>
 </div>
 
 <?php wp_footer(); ?>
