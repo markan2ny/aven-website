@@ -63,53 +63,51 @@ function careers_right($atts){
 	add_shortcode( 'careers_right', 'careers_right' );
 
 
-function product_carousel() {
+function contact_card() {
 ob_start();
 ?>
-<main>
-
-<div id="carousel">
-
-   <div class="hideLeft">
-	<img src="https://i1.sndcdn.com/artworks-000165384395-rhrjdn-t500x500.jpg">
-  </div>
-
-  <div class="prevLeftSecond">
-	<img src="https://i1.sndcdn.com/artworks-000185743981-tuesoj-t500x500.jpg">
-  </div>
-
-  <div class="prev">
-	<img src="https://i1.sndcdn.com/artworks-000158708482-k160g1-t500x500.jpg">
-  </div>
-
-  <div class="selected">
-	<img src="https://i1.sndcdn.com/artworks-000062423439-lf7ll2-t500x500.jpg">
-  </div>
-
-  <div class="next">
-	<img src="https://i1.sndcdn.com/artworks-000028787381-1vad7y-t500x500.jpg">
-  </div>
-
-  <div class="nextRightSecond">
-	<img src="https://i1.sndcdn.com/artworks-000108468163-dp0b6y-t500x500.jpg">
-  </div>
-
-  <div class="hideRight">
-	<img src="https://i1.sndcdn.com/artworks-000064920701-xrez5z-t500x500.jpg">
-  </div>
-
+<div class="contacts contact-card">
+	<div class="row">
+		<!-- col start -->
+		<div class="col-lg-6 col-md-12 col-12">
+			<div class="card">
+				<h1>Head Office</h1>
+				<ul class="card-info">
+					<li>
+						<span><i class="fas fa-map-marker-alt"></i></span>
+						<span>1072 JP. Rizal St. Sta. Barbara Baliuag, Bulacan</span>
+					</li>
+					<li>
+						<span><i class="fas fa-envelope"></i></span>
+						<span><a href="mailto:hrdepartment@avenfashion.com.ph">hrdepartment@avenfashion.com.ph</a></span>
+					</li>
+					<li>
+						<span><i class="fas fa-phone-square"></i></span>
+						<span><a href="tel:(044) 766 5536">(044) 766 5536</a></span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- col end -->
+		<!-- col start -->
+		<div class="col-lg-6 col-md-12 col-12">
+			<div class="card">
+				<h1>Opening Hours</h1>
+				<p>Aven Fashion is open on the following days:</p>
+				<div class="opening-schedule">
+					<span>Monday - Saturday</span>
+					<br>
+					<span>7:00 - 16:00</span>
+				</div>
+			</div>
+		</div>
+		<!-- col end -->
+	</div>
 </div>
-
-<div class="buttons">
-  <button id="prev">Prev</button>
-  <button id="next">Next</button>
-</div>
-
-</main>
 
 
 
 <?php
 return ob_get_clean();
 }
-add_shortcode( 'product_carousel', 'product_carousel' );
+add_shortcode( 'contact_card', 'contact_card' );
